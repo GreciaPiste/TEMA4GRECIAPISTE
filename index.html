@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD </title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="header">
+        <h1>Crud in Html
+            <small>
+                with local storage
+            </small>
+        </h1>
+    </div>
+    <div id="contenedor">
+        <tr>
+            <td>
+                <form id="formulario" autocomplete="off">
+                    <div>
+                        <label for="CodigoAl"> Nombre de la escuela: </label>
+                        <br>
+                        <input minlength="0" class="entries" type="text" name="CodigoAl"  id="nomEsc">
+                    </div>
+                    <div>
+                        <label for="Alumno">Direccion: </label>
+                        <br>
+                        <input minlength="0" class="entries" type="text" name="Alumno"  id="direction">
+                    </div>
+                    <div>
+                        <label for="Grado"> Codigo postal: </label>
+                        <br>
+                        <input minlength="0" class="entries" type="text" name="Grado"  id="cp" >
+                    </div>
+                    <div>
+                        <label for="Grupo"> Clave: </label>
+                        <br>
+                        <input minlength="0" class="entries" type="text" name="Grupo" id="key" >
+                    </div>
+                    <div class="Botones">
+                        <input type="submit" class="agregar" value="Agregar" id="agregar">
+<!--                         <input type="reset" value="Limpiar" id="limpiar">
+ -->                    </div>
+                </form>
+                <td id="results">
+                    <table class="lista" id="Encabezados">
+                        <thead>
+                            <tr>
+                                <th> Nombre de la escuela </th>
+                                <th> Direccion </th>
+                                <th> CP </th>
+                                <th> Clave </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </td>        
+            </td>
+        </tr>
+    </div>    
+    <script src="logica.js"> </script>
+
+   
+  </body>
+</html>

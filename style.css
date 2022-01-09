@@ -1,0 +1,146 @@
+
+
+.header{
+    color: #f3025a;
+    justify-content: center;
+    margin: 10px;
+    padding: 1em;
+    border-radius: 1vh;
+    background-color: #fff6d5;
+    border-style: solid;
+}
+
+body{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #ffcdd452; 
+   min-height: 100vh;
+   position: relative;
+   font-size: 'space mono' , monospace;
+}
+
+
+label{
+    margin-bottom: 12px;
+    padding: 8px;
+   justify-content: space-between;
+}
+
+
+#formulario {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+    max-width: 1040px;
+    border-style: solid;
+    background-color: #fff6d5;
+    border-color: #e75d90 ;
+}
+
+
+.agregar{
+    margin-top: 8px;
+    padding: 12px;
+    font-weight: 700;
+    background: #e75d90;
+    color:hsl(0, 0%, 100%);
+    border-radius: 1vh;
+    transition: all 300ms ease-in-out;
+    cursor: pointer; 
+}
+
+.entries{
+    width: 100%;
+    height:50px;
+    background: #ffcdd4 ;
+    background-position: 1em center;
+    background-size: 1em;
+    color:#e75d90;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    outline: none;
+    border: none;
+    border-radius: 1vh;
+    padding: 8px;
+ }
+
+
+
+th{
+    font-weight: bold;
+    border: 3px solid #e75d90;
+    border-radius: 1em;
+    padding: 8px;
+    text-align: center;
+}
+td{
+    border: 3px solid #e75d90;
+    border-radius: 1em;
+    padding: 8px;
+    text-align: center;
+}
+
+.eliminar {
+    padding: 4px;
+    border-radius: 1vh;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.eliminar:hover {
+    background-color: #f3025a; /* Green */
+    color: white;
+}
+.modificar {
+    padding: 4px;
+    border-radius: 1vh;
+    background-color: #e7e7e7;
+    color: black;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.modificar:hover {
+    background-color: #ffcdd4; /* Green */
+    color: white;
+}
+
+.lista{
+    background-color: #fff6d5;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+    max-width: 1040px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-style: solid;
+    border-color: #e75d90 ;
+}
+
+.actualizar{
+    margin-top: 8px;
+    padding: 12px;
+    font-weight: 700;
+    background: #e75d90;
+    color:hsl(0, 0%, 100%);
+    border-radius: 1vh;
+    transition: all 300ms ease-in-out;
+    cursor: pointer; 
+}
+.cancelar{
+    margin-top: 8px;
+    padding: 12px;
+    font-weight: 700;
+    background: #e75d90;
+    color:hsl(0, 0%, 100%);
+    border-radius: 1vh;
+    transition: all 300ms ease-in-out;
+    cursor: pointer; 
+}
