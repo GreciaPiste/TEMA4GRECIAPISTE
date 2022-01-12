@@ -138,7 +138,7 @@ function actualizar(i){
 
 }
 
-  }
+  
   localStorage.setItem("Datos", JSON.stringify(escuelas));
   Vista();
 
