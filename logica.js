@@ -108,20 +108,20 @@ for (let i=0; i < escuelas.length; i++){
 
 function actualizar(i){
   let escuelas = JSON.parse(localStorage.getItem("Datos"));
-  escuelas[i].codigo = document.getElementById("newnomEsc").value;
-  escuelas[i].nombre = document.getElementById("newdirection").value;
-  escuelas[i].grado = document.getElementById("newcp").value;
-  escuelas[i].grupo = document.getElementById("newkey").value;
-  if(escuelas[i].codigo ==""){
+  escuelas[i].nombreEscuela = document.getElementById("newnomEsc").value;
+  escuelas[i].direccion = document.getElementById("newdirection").value;
+  escuelas[i].codigoPostal = document.getElementById("newcp").value;
+  escuelas[i].clave = document.getElementById("newkey").value;
+  if(escuelas[i].nombreEscuela ==""){
       alert("Ingrese un nombre antes de actualizar");
   }else{
-    if(escuelas[i].nombre ==""){
+    if(escuelas[i].direccion ==""){
       alert("Ingrese una direccion antes de actualizar");
     }else{
-        if(escuelas[i].grado ==""){
+        if(escuelas[i].codigoPostal ==""){
             alert("Ingrese el codigo postal antes de actualizar");
         }else{
-            if(escuelas[i].grupo ==""){
+            if(escuelas[i].clave ==""){
                 alert("Ingrese la clave antes de actualizar");
             }else{
             localStorage.setItem("Datos",JSON.stringify(escuelas));
@@ -131,6 +131,12 @@ function actualizar(i){
         }
         
     }
+
+  }
+  localStorage.setItem("Datos", JSON.stringify(escuelas));
+  Vista();
+
+}
 
   }
   localStorage.setItem("Datos", JSON.stringify(escuelas));
